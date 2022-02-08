@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnBarcode: Button
     lateinit var textView: TextView
 
+    private var switch: TextView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         title = "LukmanTestScan"
         btnBarcode = findViewById(R.id.button)
         textView = findViewById(R.id.txtContent)
+        switch = findViewById(R.id.switchAct)
         btnBarcode?.setOnClickListener {
             val intent = IntentIntegrator(this@MainActivity)
             intent.setBeepEnabled(false)
@@ -28,6 +31,10 @@ class MainActivity : AppCompatActivity() {
             intent.setPrompt("SCAN")
             intent.setBarcodeImageEnabled(false)
             intent.initiateScan()
+        }
+        switch?.setOnClickListener {
+            var intent = Intent(this, ScannerCode::class.java)
+            startActivity(intent)
         }
     }
 

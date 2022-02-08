@@ -4,6 +4,7 @@
 
     <uses-feature android:name="android.hardware.camera.autoFocus" />
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -16,6 +17,9 @@
         android:theme="@style/Theme.ScannerZxing">
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScannerCode"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lukman/AndroidStudioProjects/ScannerZxing/app/src/main/res/layout/activity_code_scanner.xml" value="0.22" />
         <entry key="..\:/Users/lukman/AndroidStudioProjects/ScannerZxing/app/src/main/res/layout/activity_main.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/lukman/AndroidStudioProjects/ScannerZxing/app/src/main/res/layout/frame_scanner.xml" value="0.17604166666666668" />
       </map>
     </option>
   </component>
