@@ -16,10 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ScannerZxing">
         <activity
-            android:name=".MainActivity"
+            android:name=".ScannerCode"
             android:exported="false" />
         <activity
-            android:name=".ScannerCode"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
